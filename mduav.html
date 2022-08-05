@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQPM8HRQR7"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TQPM8HRQR7');
+      </script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!--CSS Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    
+        <!-- Favicons -->
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="assets/icons/VA.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="assets/icons/VA.png"
+        />
+    
+        <!-- Animate CSS CDN -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <title>Vinamr Arya | FireFly</title>
+    </head>
+    <body>
+      <nav> 
+        <div class="nav-header">
+          <a href="./index.html">Vinamr Arya</a><span> /&nbsp;<a href="./index.html#projects">Projects</a>&nbsp;/ <a>FireFly</a></span>
+        </div>
+        <ul class="navigation">
+          <li class="dropdown"><a href="./index.html#about" class="nav-link">About</a></li>
+          
+          <li class="dropdown"><a href="./index.html#education" class="nav-link">Education&nbsp;&dtrif;</a>
+           <ul class="dropdown-content"><span>&diams;</span>
+            <li><a href="./umich.html">University&nbsp;of&nbsp;Michigan</a></li>
+            <li><a href="./ohs.html">Oxford&nbsp;Highschool</a></li>
+            <li><a href="./mayo.html">Mayo&nbsp;College</a></li>
+          </ul>
+          </li>          
+         
+          <li class="dropdown"><a href="./index.html#projects" class="nav-link">Projects&nbsp;&dtrif;</a>
+            <ul class="dropdown-content"><span>&diams;</span>
+              <li><a href="./igor.html">Igor</a></li>
+              <li><a href="./garber.html">Garber</a></li>
+              <li><a href="./mduav.html">FireFly</a></li>
+              <li><a href="./robust.html">Robust</a></li>
+              <li><a href="./spyro.html">SpyRo</a></li>
+              <li><a href="./little-tornado.html">Little Tornado</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="./index.html#skills" class="nav-link">Skills</a></li>
+          
+          <li class="dropdown"><a href="./index.html#work-experience" class="nav-link">Work&nbsp;Experience&nbsp;&dtrif;</a>
+            <ul class="dropdown-content"><span>&diams;</span>
+              <li><a href="./research-assistant.html">University&nbsp;of&nbsp;Michigan</a></li>
+              <li><a href="./ceo-burnoulli.html">Burnoulli&nbsp;Tech</a></li>
+              <li><a href="./regional-secretary.html">Aeromodellers&nbsp;Assoc.&nbsp;Of&nbsp;India</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="./index.html#hobbies" class="nav-link">Hobbies&nbsp;&dtrif;</a>
+            <ul class="dropdown-content"><span>&diams;</span>
+              <li><a href="./sketches.html">Sketches</a></li>
+              <li><a href="./violin.html">Playing&nbsp;Violin</a></li>
+              <li><a href="./cricket.html">Playing&nbsp;Cricket</a></li>
+              <li><a href="./flying.html">Flying&nbsp;Airplanes</a></li>
+              <li><a href="./fpv.html">FPV&nbsp;Freestyle</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="./index.html#contact" class="nav-link">Contact</a></li>
+          <li class="dropdown"><a href="http://www.vinnovator.com" target="_blank" class="nav-link">Legacy Site</a></li>
+        </ul>
+        
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+      </nav>
+
+        <!-- **** Introduction **** -->
+        
+      <section class="igor">
+
+        <div class="project-video">
+          <iframe 
+            src="https://www.youtube.com/embed/tSsBuITDNhg?rel=0&html5=1&vq=hd720&modestbranding=1" frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+            <div>
+              <p>
+                FireFly is a fire fighting hexacopter that uses a raspberry pi and a flight control 
+                board to look for heat signatures corresponding to fire. It then flies towards it and 
+                dispenses fire retardant from an off the shelf fire extinguisher. Its payload bay can 
+                be used to house several types of fire extinguishers, allowing it to extinguish various 
+                types of fires such as type A,B,C,D. Moreover, FireFly has a First Person View (FPV) 
+                camera to help the operator control the aircraft accurately even when its not in the 
+                line of sight
+              </p>
+              <p>
+                I first got the idea for FireFly when I read a news article about the damage California 
+                wild fires cause and the difficulties the firemen face while trying to get them under 
+                control. Moreover FireFly can be of great help while fighting fires in high rise building 
+                where  it would be impractical to use a ladder and too time consuming and dangerous to use 
+                stairs
+              </p>
+              <p>
+                The idea is simple, use a drone with a heat sensor and an extinguisher to put out the fire. 
+                But the execution is not so simple. One of the biggest challenges was integrating Ardupilot 
+                (flight control software), running on the flight controller, with Raspberry Pi for full 
+                autonomous flight.
+              </p>
+            </div>
+            <div class="image-container">
+              <img
+                src="assets/images/firefly/firefly-1.JPG"
+                alt="FireFly without payload"
+                loading="lazy"
+                class="project-pic"
+              />
+              <img
+                src="assets/images/firefly/firefly-2.JPG"
+                alt="Raspberry Pi"
+                loading="lazy"
+                class="project-pic"
+              />
+              <img
+                src="assets/images/firefly/firefly-3.JPG"
+                alt="Sonar sensors"
+                loading="lazy"
+                class="project-pic"
+              />
+              <img
+                src="assets/images/firefly/firefly-4.JPG"
+                alt="Thermal sensor"
+                loading="lazy"
+                class="project-pic"
+              />
+              <img
+                src="assets/images/firefly/firefly-5.JPG"
+                alt="DJI telemetry equipment"
+                loading="lazy"
+                class="project-pic"
+              />
+              <img
+                src="assets/images/firefly/firefly-6.JPG"
+                alt="KK board"
+                loading="lazy"
+                class="project-pic"
+              />
+              <img
+                src="assets/images/firefly/firefly-7.JPG"
+                alt="Thermal Camera"
+                loading="lazy"
+                class="project-pic"
+              />
+
+            </div>
+          
+      </section>
+
+      <footer>
+      <div class="socials-1">
+        <a href="https://twitter.com/arya_vinamr" target="_blank">
+          <img
+            src="assets/icons/twitter-icon.png"
+            alt="Twitter"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        
+        <a href="https://www.linkedin.com/in/vinamrarya" target="_blank">
+        <img
+            src="assets/icons/linkedin-icon.png"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/vinarya" target="_blank">
+          <img 
+            src="assets/icons/github-icon.png" 
+            alt="Github" 
+            class="socicon"
+        /></a>
+        <div class="foot-text"> 
+          <p class="copy">&copy; Copyright 2022</p>
+          <p class="copy">
+            Built with &#x2661; by
+            <a href="https://twitter.com/arya_vinamr" target="_blank">Vinamr&nbsp;Arya</a>
+          </p>
+        </div>
+          <a href="https://www.facebook.com/vinnovator" target="_blank">
+            <img
+              src="assets/icons/fb-icon.png"
+              alt="Facebook Page"
+              loading="lazy"
+              class="socicon"
+          /></a>
+          <a href="https://www.youtube.com/channel/UCCN-Sqkmg1Q_zKSm38hq_rA" target="_blank">
+            <img
+              src="assets/icons/youtube-icon.png"
+              alt="YouTube"
+              loading="lazy"
+              class="socicon"
+          /></a>
+          <a href="https://www.instagram.com/vin_ar/" target="_blank">
+          <img
+            src="assets/icons/insta-icon.png"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+          /></a>
+      </div>
+        
+       
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+        <!-- Website scripts -->
+        <script src="assets/js/app.js"></script>
+    
+    
+        <!-- Ion icons scripts -->
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+          nomodule
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+  </body>
+</html>
