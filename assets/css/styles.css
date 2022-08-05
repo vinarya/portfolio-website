@@ -790,7 +790,29 @@ img {
 .igor p{
   padding: 0.4rem;
 }
-
+.thankyou{
+  margin: 11rem 1rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: 'Dosis';
+  line-height: var(--line-height);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.thankyou h1{
+  font-size: 40px;
+}
+.thankyou p{
+  padding: 1rem 0;
+}
+.thankyou a{
+  color: var(--secondary-color);
+}
+.thankyou a:hover{
+  color: var(--primary-color);
+}
 .igor iframe{
   width: 100%;
   height: 100%;
