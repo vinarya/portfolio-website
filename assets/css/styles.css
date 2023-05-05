@@ -750,6 +750,9 @@ img {
     height: 2rem;
     display: none;
   }
+  .dropdown-content span{
+    display: none;
+  }
 }
 .gallery__img {
   position: absolute;
@@ -928,7 +931,9 @@ img {
     font-size: 10px;
     /*font-family: Verdana, sans-serif;*/
   }
-  
+  .dropdown-content span{
+    display: none;
+  }
   input:checked+ .roundbutton .on
   {display: block;}
   
